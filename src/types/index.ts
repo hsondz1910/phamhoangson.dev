@@ -8,6 +8,9 @@ export interface ExperienceType {
   organization: string;
   date: string;
   description: string;
+  technologies?: string[];
+  role?: string;
+  website?: string;
 }
 
 export interface ProjectType {
