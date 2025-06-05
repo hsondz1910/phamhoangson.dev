@@ -12,23 +12,51 @@ const Experience: React.FC = () => {
         
         <div className="mt-10 max-w-3xl mx-auto">
           <div className="relative">
-            {experiences.map((exp, index) => (
-              <ScrollReveal key={index} delay={index * 0.2}>
-                <div className="timeline-item">
-                  <div className="timeline-dot"></div>
-                  <div className="ml-2">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                      <h3 className="text-xl font-semibold">{exp.title}</h3>
-                      <span className="text-sm bg-primary-100 text-primary-700 px-3 py-1 rounded-full mt-1 md:mt-0">
-                        {exp.date}
-                      </span>
+            {/* Timeline line */}
+            <div className="absolute left-2 top-0 w-px h-full bg-gray-300" />
+              {experiences.map((exp, index) => (
+                  <ScrollReveal key={index} delay={index * 0.2}>
+                    <div className="timeline-item">
+                      {/*<div className="timeline-dot"></div>*/}
+                      <div className="ml-2">
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                          <h3 className="text-xl font-semibold">{exp.title}</h3>
+                          <span className="text-sm bg-primary-100 text-primary-700 px-3 py-1 rounded-full mt-1 md:mt-0">
+                            {exp.date}
+                          </span>
+                        </div>
+                        <p className="text-neutral-600 mb-2">{exp.organization}</p>
+                        <p className="text-neutral-700 mb-2">{exp.description}</p>
+
+                        {exp.technologies && (
+                            <p className="text-sm text-neutral-600 mb-1">
+                              <strong>Technologies:</strong> {exp.technologies.join(', ')}
+                            </p>
+                        )}
+
+                        {exp.role && (
+                            <p className="text-sm text-neutral-600 mb-1">
+                              <strong>Role & Contribution:</strong> {exp.role}
+                            </p>
+                        )}
+
+                        {exp.website && (
+                            <p className="text-sm text-blue-600 underline">
+                              <a
+                                  href={exp.website}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-block mt-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded"
+                              >
+                                Visit Website
+                              </a>
+
+                            </p>
+                        )}
+                      </div>
                     </div>
-                    <p className="text-neutral-600 mb-2">{exp.organization}</p>
-                    <p className="text-neutral-700">{exp.description}</p>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
+                  </ScrollReveal>
+              ))}
           </div>
         </div>
       </div>
