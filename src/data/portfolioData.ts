@@ -1,12 +1,12 @@
 import { SkillType, ExperienceType, ProjectType, CertificationType, LanguageType, SocialLinkType } from '../types';
 
 export const personalInfo = {
-  name: 'SƠN PHẠM HOÀNG',
+  name: 'PHẠM HOÀNG SƠN',
   role: 'Software Engineering Student',
   about: 'Dedicated Software Engineer with a strong foundation in full-stack development, specializing in Java, JavaScript, and React. Passionate about creating scalable, user-centric solutions to solve real-world problems. Graduating from Ton Duc Thang University in 2026, I aim to contribute my technical skills and leadership to drive innovation in technology.',
   email: 'hsondz1910@gmail.com',
   phone: '+84-914-037-057',
-  location: 'District 7, Ho Chi Minh City',
+  location: 'District Nha Be, Ho Chi Minh City',
   education: {
     university: 'Ton Duc Thang University',
     degree: 'Bachelor of Software Engineering',
@@ -38,19 +38,14 @@ export const skills: SkillType[] = [
 ];
 
 export const experiences: ExperienceType[] = [
-  /*
-  {
-    title: 'TECHMART E-commerce Platform',
-    organization: 'Team Project',
-    date: '2023',
-    description: 'Built a technology e-commerce site featuring product browsing, user authentication, cart management, and secure payments. Developed back-end services with RESTful APIs for product, user, and order management. Optimized MongoDB schema, integrated payment gateways, and containerized with Docker for seamless deployment.',
-  },
-  */
   {
     title: 'ONEBILLION Medical Monitoring Platform',
     organization: 'Team Project (15 members)',
     date: '2024',
-    description: 'Collaborated with a 15-member team to deliver a medical platform allowing users to track health status via indicators, visualize data through charts, and schedule appointments with doctors. Developed a cardiovascular page UI with table charts and heart rate/SpO2 diagrams, enhancing usability and visual clarity.',
+    description: 'Collaborated with a 15-member team to deliver the project on time. Developed a medical platform allowing users to track health status via indicators, visualize data through charts, and schedule appointments with doctors.',
+    technologies: ['Next.js', 'Nest.js', 'PostgreSQL', 'Tailwind CSS'],
+    role: 'Developed cardiovascular UI with table chart, heart rate & SpO2 diagrams. Built RESTful APIs for user ratings, ensuring smooth front-end/backend integration.',
+    website: 'https://locsmentee.xyz'
   }
 ];
 
