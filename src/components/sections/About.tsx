@@ -20,12 +20,6 @@ const About: React.FC = () => {
                     {para}
                   </p>
               ))}
-              <p className="text-neutral-700">
-                I'm constantly learning and expanding my knowledge in software development. 
-                My goal is to create efficient, scalable, and user-friendly applications 
-                that solve real-world problems.
-              </p>
-              
               <div className="pt-4">
                 <h4 className="text-xl font-semibold mb-4">Contact Information</h4>
                 <div className="space-y-3">
