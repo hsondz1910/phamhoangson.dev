@@ -15,9 +15,11 @@ const About: React.FC = () => {
           <ScrollReveal direction="right" delay={0.2}>
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold mb-4">Who am I?</h3>
-              <p className="text-neutral-700">
-                {personalInfo.about}
-              </p>
+              {personalInfo.about.split('\n\n').map((para, idx) => (
+                  <p key={idx} className="text-neutral-700 mb-4">
+                    {para}
+                  </p>
+              ))}
               <p className="text-neutral-700">
                 I'm constantly learning and expanding my knowledge in software development. 
                 My goal is to create efficient, scalable, and user-friendly applications 
@@ -28,12 +30,12 @@ const About: React.FC = () => {
                 <h4 className="text-xl font-semibold mb-4">Contact Information</h4>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
-                    <Mail size={20} className="text-primary-500" />
-                    <span>{personalInfo.email}</span>
-                  </div>
-                  <div className="flex items-center gap-3">
                     <Phone size={20} className="text-primary-500" />
                     <span>{personalInfo.phone}</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Mail size={20} className="text-primary-500" />
+                    <span>{personalInfo.email}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <MapPin size={20} className="text-primary-500" />
@@ -58,9 +60,9 @@ const About: React.FC = () => {
                 <div className="mt-4 pt-4 border-t border-neutral-200">
                   <h5 className="font-semibold mb-2">Key Achievements</h5>
                   <ul className="list-disc list-inside space-y-1 text-neutral-700">
-                    <li>Dean's List for Academic Excellence (2022-2023)</li>
-                    <li>Participant in ACM-ICPC Programming Contest</li>
-                    <li>Student Representative for Software Engineering Department</li>
+                    <li>Academic Highlights</li>
+                    <li>Learning Focus</li>
+                    <li>Relevant Coursework & Activities</li>
                   </ul>
                 </div>
               </div>
