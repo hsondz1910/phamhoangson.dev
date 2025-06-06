@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#home" className="text-xl font-bold text-neutral-900">
-          SƠN.DEV
+          PHAMHOANGSON.DEV
         </a>
 
         {/* Desktop Menu */}
