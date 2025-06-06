@@ -88,6 +88,7 @@ export const certifications: CertificationType[] = [
     issuer: 'British Council',
     date: '18 May 2025',
     description: 'CEFR Level: B2 | Overall Scale Score: 164/200',
+    link: 'https://credentials.britishcouncil.org/ebf71059-a081-470e-9b6d-a5fdd87cc52d?key=0a0f951d4844681bedfa5cfa98eb4f0863d9e01078e0bdd54e8bdfff9bd2b5d6',
   }
 ];
 
