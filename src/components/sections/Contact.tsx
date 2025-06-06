@@ -8,10 +8,10 @@ const Contact: React.FC = () => {
     switch (iconName) {
       case 'Github':
         return <Github size={24} />;
-      case 'Mail':
-        return <Mail size={24} />;
       case 'Phone':
         return <Phone size={24} />;
+      case 'Mail':
+        return <Mail size={24} />;
       default:
         return null;
     }
@@ -33,19 +33,19 @@ const Contact: React.FC = () => {
               </p>
               
               <div className="space-y-4 mb-8">
+                <a
+                    href="tel:+84914037057"
+                    className="flex items-center gap-3 text-neutral-300 hover:text-primary-400 transition-colors"
+                >
+                  <Phone size={20} />
+                  <span>+84-914-037-057</span>
+                </a>
                 <a 
                   href="mailto:hsondz1910@gmail.com" 
                   className="flex items-center gap-3 text-neutral-300 hover:text-primary-400 transition-colors"
                 >
                   <Mail size={20} />
                   <span>hsondz1910@gmail.com</span>
-                </a>
-                <a 
-                  href="tel:+84914037057" 
-                  className="flex items-center gap-3 text-neutral-300 hover:text-primary-400 transition-colors"
-                >
-                  <Phone size={20} />
-                  <span>+84-914-037-057</span>
                 </a>
               </div>
               
