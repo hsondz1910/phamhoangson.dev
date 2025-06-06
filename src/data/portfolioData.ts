@@ -32,6 +32,7 @@ export const skills: SkillType[] = [
   { name: 'Git', category: 'technical' },
   { name: 'Docker', category: 'technical' },
   { name: 'RESTful APIs', category: 'technical' },
+  { name: 'Bootstrap', category: 'technical' },
   // Soft Skills
   { name: 'Problem Solving', category: 'soft' },
   { name: 'Teamwork & Collaboration', category: 'soft' },
@@ -47,13 +48,14 @@ export const experiences: ExperienceType[] = [
     date: '2024',
     description:
         'As part of the Front-end Mentoring Program by FPT Software, collaborated with a 15-member team to build a real-world medical monitoring platform, allowing users to track health indicators, visualize data, and schedule doctor appointments.',
-    technologies: ['Next.js', 'Nest.js', 'PostgreSQL', 'Tailwind CSS'],
+    technologies: ['Next.js', 'Nest.js', 'PostgreSQL', 'Tailwind CSS', 'Shadcn'],
     tools: ['Scrum', 'Jira (Atlassian)', 'GitHub'],
     role: [
       'Developed cardiovascular UI with table chart, heart rate & SpO₂ diagrams.',
       'Built RESTful APIs for user ratings and appointments, ensuring smooth front-end/backend integration.',
       'Applied advanced JavaScript features such as callback functions, async/await, and adhered to SOLID principles for scalable architecture.',
-      'Collaborated via Jira board to manage tasks, track sprint progress, and resolve bugs using Scrum methodology in a professional workflow.'
+      'Collaborated via Jira board to manage tasks, track sprint progress, and resolve bugs using Scrum methodology in a professional workflow.',
+      'Utilized Swagger for exploring and testing team-developed RESTful APIs during integration and debugging.'
     ],
     website: 'https://locsmentee.xyz'
   }
@@ -63,16 +65,16 @@ export const projects: ProjectType[] = [
   {
     id: 'techmart',
     title: 'TECHMART E-commerce Platform',
-    description: 'A full-stack e-commerce platform with product management, user authentication, cart functionality, and secure payment processing.',
-    techStack: ['Node.js', 'Express.js', 'MongoDB', 'Docker', 'JWT'],
+    description: 'Developed a full-stack e-commerce platform using Node.js (Express.js). The system includes key features such as user authentication, product management (with categories, variants, and inventory), advanced search and filtering, shopping cart, checkout, order management, product ratings, and discount codes. Built an admin dashboard for analytics, order processing, and user management. Deployed the project via public cloud hosting or containerized with Docker Compose.\n',
+    techStack: ['Node.js', 'Express.js', 'MongoDB', 'Docker', 'JWT', 'Bootstrap'],
     role: 'Backend Developer',
-    githubLink: 'https://github.com/viethoang251004/Final_Nodejs',
+    githubLink: 'https://github.com/hsondz1910/techmart',
     image: 'https://i.postimg.cc/jjrhNBRW/techmart.png',
   },
   {
     id: 'roomsync',
     title: 'ROOMSYNC – Room Management & Rental App',
-    description: 'An Android application for rental room management with 3 user roles: admin, tenant, and landlord, each with distinct features. Supports posting, searching, user management, and real-time data sync via Firebase.',
+    description: 'The app integrates key features such as property listing, advanced room search, appointment scheduling, contract management, and online payment. Additionally, the system supports user reviews, issue reporting, reminder notifications, and displays surrounding area information to enhance the overall user experience.',
     techStack: ['Java', 'Android Studio', 'Firebase Realtime Database', 'Gradle'],
     role: 'Lead Developer',
     githubLink: 'https://github.com/hsondz1910/room-manager',
