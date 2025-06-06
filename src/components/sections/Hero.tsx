@@ -2,6 +2,7 @@ import React from 'react';
 import { Download, Mail } from 'lucide-react';
 import { personalInfo } from '../../data/portfolioData';
 import ScrollReveal from '../ScrollReveal';
+import profileImg from '../../assets/images/myself.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Hero: React.FC = () => {
                 <strong>Passionate Full-Stack Developer</strong> with solid experience in Java, JavaScript, and React. I enjoy building intuitive, scalable applications that enhance user experience and solve real-world challenges.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="../../../src/assets/file/PhamHoangSon_Resume.pdf" className="btn btn-primary" download>
+                <a href="/files/PhamHoangSon_Resume.pdf" className="btn btn-primary" download>
                   <Download size={18} />
                   Download CV
                 </a>
@@ -33,7 +34,7 @@ const Hero: React.FC = () => {
             <ScrollReveal direction="left" delay={0.3}>
               <div className="w-64 h-64 md:w-80 md:h-80 bg-primary-500 rounded-full overflow-hidden border-8 border-white shadow-xl mx-auto">
                 <img
-                  src="../../../src/assets/images/myself.jpg"
+                  src={profileImg}
                   alt="Pham Hoang Son"
                   className="w-full h-full object-cover"
                 />
