@@ -29,24 +29,35 @@ const Experience: React.FC = () => {
                         <p className="text-neutral-700 mb-2">{exp.description}</p>
 
                         {exp.technologies && (
-                            <p className="text-sm text-neutral-600 mb-1">
+                            <p className="text-neutral-600 mb-1">
                               <strong>Technologies:</strong> {exp.technologies.join(', ')}
                             </p>
                         )}
 
-                        {exp.role && (
-                            <p className="text-sm text-neutral-600 mb-1">
-                              <strong>Role & Contribution:</strong> {exp.role}
+                        {exp.tools && (
+                            <p className="text-neutral-600 mb-1">
+                              <strong>Tools & Methodologies:</strong> {exp.tools.join(', ')}
                             </p>
                         )}
 
+                        {exp.role && Array.isArray(exp.role) && (
+                            <div className="text-neutral-600 mb-1">
+                              <strong>Role & Contribution:</strong>
+                              <ul className="list-disc list-inside mt-1">
+                                {exp.role.map((item, idx) => (
+                                    <li key={idx}>{item}</li>
+                                ))}
+                              </ul>
+                            </div>
+                        )}
+
                         {exp.website && (
-                            <p className="text-sm text-blue-600 underline">
+                            <p className=" text-blue-600 underline">
                               <a
                                   href={exp.website}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-block mt-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded"
+                                  className="inline-block mt-2  font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded"
                               >
                                 Visit Website
                               </a>
