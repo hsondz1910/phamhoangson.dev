@@ -29,6 +29,7 @@ export interface CertificationType {
   issuer: string;
   date: string;
   description?: string;
+  link?: string;
 }
 
 export interface LanguageType {
