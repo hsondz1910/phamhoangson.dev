@@ -24,6 +24,19 @@ const Certifications: React.FC = () => {
                     {cert.description && (
                       <p className="text-neutral-700 text-sm mt-2">{cert.description}</p>
                     )}
+                    {cert.link && (
+                        <p className=" text-blue-600">
+                          <a
+                              href={cert.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-block mt-2  font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded"
+                          >
+                            View Certification
+                          </a>
+                        </p>
+                        )
+                    }
                   </div>
                 </ScrollReveal>
               ))}
