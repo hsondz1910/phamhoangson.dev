@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-4">{personalInfo.name}</h1>
               <h2 className="text-2xl md:text-3xl text-neutral-600 mb-6">{personalInfo.role}</h2>
               <p className="text-neutral-700 mb-8 max-w-lg">
-                {personalInfo.about}
+                <strong>Passionate Full-Stack Developer</strong> with solid experience in Java, JavaScript, and React. I enjoy building intuitive, scalable applications that enhance user experience and solve real-world challenges.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/resume.pdf" className="btn btn-primary" download>
