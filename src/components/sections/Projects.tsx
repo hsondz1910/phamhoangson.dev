@@ -22,14 +22,12 @@ const Projects: React.FC = () => {
                 onMouseLeave={() => setHoveredProject(null)}
               >
                 <div className="relative w-full overflow-hidden">
-                  <div
-                      className="relative h-64 bg-cover bg-center rounded-t-lg"
-                      style={{
-                        backgroundImage: `url(${project.image})`,
-                        transition: 'transform 0.5s ease-in-out',
-                        transform: hoveredProject === project.id ? 'scale(1.05)' : 'scale(1)',
-                      }}
-                  >
+                  <div className="relative aspect-[3/2] overflow-hidden rounded-t-lg">
+                    <img
+                        src={project.image}
+                        alt={project.title}
+                        className={`w-full h-full object-cover transition duration-500 ease-in-out ${hoveredProject === project.id ? 'scale-105 brightness-90 saturate-125' : 'scale-100 opacity-80'}`}
+                    />
                   </div>
 
                   <div className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end transition-opacity duration-300 ${
