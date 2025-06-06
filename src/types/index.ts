@@ -9,7 +9,8 @@ export interface ExperienceType {
   date: string;
   description: string;
   technologies?: string[];
-  role?: string;
+  tools?: string[];
+  role?: string[];
   website?: string;
 }
 
