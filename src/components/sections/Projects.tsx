@@ -16,34 +16,40 @@ const Projects: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
           {projects.map((project, index) => (
             <ScrollReveal key={project.id} delay={index * 0.15}>
-              <div 
+              <div
                 className="rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl bg-white"
                 onMouseEnter={() => setHoveredProject(project.id)}
                 onMouseLeave={() => setHoveredProject(null)}
               >
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
-                  />
+                <div className="relative w-full overflow-hidden">
+                  <div
+                      className="relative h-64 bg-cover bg-center rounded-t-lg"
+                      style={{
+                        backgroundImage: `url(${project.image})`,
+                        transition: 'transform 0.5s ease-in-out',
+                        transform: hoveredProject === project.id ? 'scale(1.05)' : 'scale(1)',
+                      }}
+                  >
+                  </div>
+
                   <div className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end transition-opacity duration-300 ${
-                    hoveredProject === project.id ? 'opacity-100' : 'opacity-0'
+                      hoveredProject === project.id ? 'opacity-100' : 'opacity-0'
                   }`}>
                     <div className="p-4 w-full">
                       <div className="flex justify-between items-center">
                         <h3 className="text-white font-semibold">{project.title}</h3>
                         <div className="flex gap-2">
                           {project.githubLink && (
-                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-300 transition-colors">
-                              <Github size={20} />
-                            </a>
+                              <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-300 transition-colors">
+                                <Github size={20} />
+                              </a>
                           )}
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-neutral-700 mb-4">{project.description}</p>
@@ -58,9 +64,9 @@ const Projects: React.FC = () => {
                     </div>
                   </div>
                   {project.githubLink && (
-                    <a 
-                      href={project.githubLink} 
-                      target="_blank" 
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary-500 font-medium flex items-center gap-1 hover:text-primary-600 transition-colors"
                     >
