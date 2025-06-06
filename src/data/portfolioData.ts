@@ -66,8 +66,8 @@ export const projects: ProjectType[] = [
     description: 'A full-stack e-commerce platform with product management, user authentication, cart functionality, and secure payment processing.',
     techStack: ['Node.js', 'Express.js', 'MongoDB', 'Docker', 'JWT'],
     role: 'Backend Developer',
-    githubLink: 'https://github.com/hsondz1910/techmart',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    githubLink: 'https://github.com/viethoang251004/Final_Nodejs',
+    image: 'https://i.postimg.cc/jjrhNBRW/techmart.png',
   },
   {
     id: 'roomsync',
@@ -76,7 +76,7 @@ export const projects: ProjectType[] = [
     techStack: ['Java', 'Android Studio', 'Firebase Realtime Database', 'Gradle'],
     role: 'Lead Developer',
     githubLink: 'https://github.com/hsondz1910/room-manager',
-    image: 'https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://i.postimg.cc/y8RPD7C4/roomsync.png',
   }
 ];
 
