@@ -3,7 +3,10 @@ import { SkillType, ExperienceType, ProjectType, CertificationType, LanguageType
 export const personalInfo = {
   name: 'PHẠM HOÀNG SƠN',
   role: 'Software Engineering Student',
-  about: 'Dedicated Software Engineer with a strong foundation in full-stack development, specializing in Java, JavaScript, and React. Passionate about creating scalable, user-centric solutions to solve real-world problems. Graduating from Ton Duc Thang University in 2026, I aim to contribute my technical skills and leadership to drive innovation in technology.',
+  about:
+      'I\'m a Software Engineering student at Ton Duc Thang University (2021–2026), currently focusing on full-stack development with strong skills in Java, JavaScript, and modern frameworks like React.\n\n' +
+      'Beyond writing clean code, I’m passionate about building meaningful digital products that combine technical precision with user empathy. I’ve also gained real-world experience through FPT Software’s Mentoring Program, where I learned agile collaboration and scalable architecture principles.\n\n' +
+      'My goal is to grow into a developer who not only writes efficient systems, but also brings value to users and contributes to impactful tech solutions.',
   email: 'hsondz1910@gmail.com',
   phone: '+84-914-037-057',
   location: 'District Nha Be, Ho Chi Minh City',
@@ -42,9 +45,16 @@ export const experiences: ExperienceType[] = [
     title: 'ONEBILLION Medical Monitoring Platform',
     organization: 'Team Project (15 members)',
     date: '2024',
-    description: 'Collaborated with a 15-member team to deliver the project on time. Developed a medical platform allowing users to track health status via indicators, visualize data through charts, and schedule appointments with doctors.',
+    description:
+        'As part of the Front-end Mentoring Program by FPT Software, collaborated with a 15-member team to build a real-world medical monitoring platform, allowing users to track health indicators, visualize data, and schedule doctor appointments.',
     technologies: ['Next.js', 'Nest.js', 'PostgreSQL', 'Tailwind CSS'],
-    role: 'Developed cardiovascular UI with table chart, heart rate & SpO2 diagrams. Built RESTful APIs for user ratings, ensuring smooth front-end/backend integration.',
+    tools: ['Scrum', 'Jira (Atlassian)', 'GitHub'],
+    role: [
+      'Developed cardiovascular UI with table chart, heart rate & SpO₂ diagrams.',
+      'Built RESTful APIs for user ratings and appointments, ensuring smooth front-end/backend integration.',
+      'Applied advanced JavaScript features such as callback functions, async/await, and adhered to SOLID principles for scalable architecture.',
+      'Collaborated via Jira board to manage tasks, track sprint progress, and resolve bugs using Scrum methodology in a professional workflow.'
+    ],
     website: 'https://locsmentee.xyz'
   }
 ];
@@ -97,13 +107,13 @@ export const socialLinks: SocialLinkType[] = [
     icon: 'Github',
   },
   {
+    platform: 'Phone',
+    url: 'tel:+84914037057',
+    icon: 'Phone',
+  },
+  {
     platform: 'Email',
     url: 'mailto:hsondz1910@gmail.com',
     icon: 'Mail',
   },
-  {
-    platform: 'Phone',
-    url: 'tel:+84914037057',
-    icon: 'Phone',
-  }
 ];
