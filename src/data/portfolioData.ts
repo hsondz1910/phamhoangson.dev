@@ -69,7 +69,7 @@ export const projects: ProjectType[] = [
     techStack: ['Node.js', 'Express.js', 'MongoDB', 'Docker', 'JWT', 'Bootstrap'],
     role: 'Backend Developer',
     githubLink: 'https://github.com/hsondz1910/techmart',
-    image: 'https://i.postimg.cc/jjrhNBRW/techmart.png',
+    image: 'https://i.postimg.cc/QxNn0h6Z/techmart.png',
   },
   {
     id: 'roomsync',
@@ -78,7 +78,7 @@ export const projects: ProjectType[] = [
     techStack: ['Java', 'Android Studio', 'Firebase Realtime Database', 'Gradle'],
     role: 'Lead Developer',
     githubLink: 'https://github.com/hsondz1910/room-manager',
-    image: 'https://i.postimg.cc/y8RPD7C4/roomsync.png',
+    image: 'https://i.postimg.cc/dQjx2Lj9/roomsync.png',
   }
 ];
 
