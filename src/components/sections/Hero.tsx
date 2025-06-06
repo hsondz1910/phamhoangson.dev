@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
                 <strong>Passionate Full-Stack Developer</strong> with solid experience in Java, JavaScript, and React. I enjoy building intuitive, scalable applications that enhance user experience and solve real-world challenges.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="/resume.pdf" className="btn btn-primary" download>
+                <a href="../../../src/assets/file/PhamHoangSon_Resume.pdf" className="btn btn-primary" download>
                   <Download size={18} />
                   Download CV
                 </a>
