@@ -1,4 +1,4 @@
-1import turtle
+import turtle
 
 pen = turtle.Turtle()
 pen.speed(1)
