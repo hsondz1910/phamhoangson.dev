@@ -1,6 +1,7 @@
 export interface SkillType {
   name: string;
   category: 'technical' | 'soft';
+  group?: string;
 }
 
 export interface ExperienceType {
@@ -22,6 +23,7 @@ export interface ProjectType {
   role: string;
   githubLink?: string;
   image: string;
+  youtubeLink?: string;
 }
 
 export interface CertificationType {
